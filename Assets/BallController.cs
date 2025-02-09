@@ -3,10 +3,11 @@ using UnityEngine.Events;
 
 public class BallManager : MonoBehaviour
 {
-    private bool isBallLaunched;
+    
     [SerializeField] private float force = 1f;
-    private InputManager inputManager;
+    [SerializeField] private InputManager inputManager;
     private Rigidbody ballRB;
+    private bool isBallLaunched;
     void Start()
     {
         ballRB = GetComponent<Rigidbody>();
